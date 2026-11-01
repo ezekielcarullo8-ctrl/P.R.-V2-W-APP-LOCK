@@ -31,7 +31,7 @@ jobs:
     - name: Structure and Configure Capacitor
       run: |
         mkdir -p www
-        mv index.html style.css script.js www/ || true
+        mv index.html style.css script.js app-lock.js app-lock.css www/ || true
         npm init -y
         npm install @capacitor/core @capacitor/cli @capacitor/android
         npm install @capacitor/device @capacitor/filesystem @capacitor/share
